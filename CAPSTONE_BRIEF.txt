@@ -1,0 +1,81 @@
+CAPSTONE (1 WEEK) — RETAIL / E-COMMERCE DATA ANALYST NOTEBOOK
+============================================================
+
+Choose ONE of the options below.
+
+Common submission requirements (both options)
+---------------------------------------------
+Submit a ZIP containing:
+1) app.py
+2) data/cleaned_datasets (all datasets)
+3) executive_summary.txt (bullets are fine, 8–15 lines)
+
+Option A — Sales Performance & Customer Insights
+------------------------------------------------
+Goal:
+Create an analyst-style report that answers: "How is the store performing, and what drives revenue?"
+
+Minimum tasks:
+1) Load all CSV files.
+2) Clean the data (document what you fixed):
+   - standardize product categories
+   - handle nulls (choose drop/fill rules)
+   - remove duplicates and explain your duplicate definition
+   - parse mixed date formats
+   - convert currency strings to numeric
+   - validate join keys (find and handle orphan records)
+3) Create a single 'fact table' for analysis (orders + items + products + customers).
+4) Compute KPIs:
+   - total revenue, total orders, average order value (AOV)
+   - monthly revenue trend
+   - top 10 products by revenue
+   - revenue by category
+   - revenue by region/city
+   - repeat vs new customers (simple definition allowed)
+5) Visualize (min 5 charts):
+   - monthly revenue line chart
+   - top categories/products bar chart
+   - revenue by region bar chart
+   - distribution chart (AOV or customer spend) histogram/boxplot
+   - returns or cancellations trend (your choice)
+6) Insights:
+Write 5–8 bullet insights + 2 recommendations.
+
+Option B — Logistics, Delivery & Returns Insights
+-------------------------------------------------
+Goal:
+Create an analyst report that answers: "How well are we delivering, and what causes returns?"
+
+Minimum tasks:
+1) Load all CSV files.
+2) Clean core issues (same cleaning rules as Option A).
+3) Build delivery metrics:
+   - delivery lead time (delivered_date - ship_date)
+   - % delivered, % in transit, % lost
+   - courier performance comparison
+4) Build returns metrics:
+   - return rate (returns / orders)
+   - top return reasons
+   - return rate by category and/or courier
+5) Visualize (min 5 charts):
+   - lead time distribution
+   - courier comparison chart
+   - return reasons bar chart
+   - return rate by category
+   - shipment status breakdown
+6) Insights:
+Write 5–8 bullet insights + 2 recommendations.
+
+Time guidance for working learners
+----------------------------------
+- Day 1–2: Cleaning + building fact table (2–4 hours total)
+- Day 3–4: KPIs + charts (2–3 hours total)
+- Day 5–7: polish dashboard + summary (1 hour)
+
+Rubric (simple)
+---------------
+- Data loading & organization (10%)
+- Cleaning quality + cleaning log (35%)
+- Analysis KPIs (25%)
+- Visualizations + interpretations (25%)
+- Packaging + exports (5%)
